@@ -1,0 +1,7 @@
+-- Add a relationship: Customers[customer_id] (1) -> Transactions[customer_id] (*)
+Total Revenue = SUM(Transactions[amount])
+Successful Transactions = CALCULATE(COUNTROWS(Transactions), Transactions[is_successful] = TRUE())
+All Customers = DISTINCTCOUNT(Customers[customer_id])
+Churned Customers = CALCULATE(DISTINCTCOUNT(Customers[customer_id]), Customers[is_churned] = 1)
+Churn Rate = DIVIDE([Churned Customers], [All Customers], 0)
+Average Customer Value = DIVIDE([Total Revenue], [All Customers], 0)
