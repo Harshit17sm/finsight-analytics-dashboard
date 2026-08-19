@@ -1,0 +1,11 @@
+customer_id,transaction_date,amount,product_type,status
+C-0001,2025-06-12,425.50,Cards,completed
+C-0001,2025-05-08,210.00,Payments,completed
+C-0002,2025-06-18,1800.00,Wealth,completed
+C-0002,2025-04-22,950.00,Wealth,completed
+C-0003,2025-02-03,320.00,Cards,completed
+C-0003,2025-01-11,115.00,Payments,completed
+C-0004,2025-06-20,780.00,Personal loans,completed
+C-0005,2025-06-04,65.00,Insurance,completed
+C-0005,2025-05-04,72.00,Insurance,completed
+C-0006,2025-03-18,440.00,Cards,declined

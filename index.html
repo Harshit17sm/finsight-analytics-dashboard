@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinSight | Analytics workspace</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">↗</span><span>finsight</span></div>
+      <p class="eyebrow">Workspace</p>
+      <nav><a class="active" href="#overview">⌂ <span>Overview</span></a><a href="#customers">◉ <span>Customers</span></a><a href="#products">▦ <span>Products</span></a></nav>
+      <div class="sidebar-bottom"><div class="health-dot"></div><div><strong>Pipeline healthy</strong><small>Last refreshed today</small></div></div>
+    </aside>
+    <section class="content">
+      <header class="topbar"><div><p class="eyebrow">Portfolio intelligence / 01</p><h1>Good morning, Alex <span>✦</span></h1></div><div class="top-actions"><label class="import-button">＋ Import CSV<input id="file-input" type="file" accept=".csv,text/csv" /></label><button class="icon-button" aria-label="Notifications">♢</button><div class="avatar">AC</div></div></header>
+      <div class="toolbar"><div class="date-control">◷ <span id="date-label">Last 12 months</span>⌄</div><select id="product-filter"><option value="all">All products</option></select><select id="status-filter"><option value="all">All statuses</option><option value="active">Active customers</option><option value="risk">At-risk customers</option></select><span class="data-note" id="data-note">Demo dataset · 4,820 transactions</span></div>
+      <div id="app" class="dashboard"></div>
+      <footer>FinSight Analytics <span>•</span> RFM framework <span>•</span> Churn window: 90 days</footer>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
